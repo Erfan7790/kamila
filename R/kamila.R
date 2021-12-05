@@ -352,9 +352,9 @@ kamila <- function(
     
     numObs <- nrow(conVar)
     numConVar <- ncol(conVar)
-    if (nrow(catFactor) != numObs) {
-      stop("Number of observations in con and cat vars don't match")
-    }
+   # if (nrow(catFactor) != numObs) {
+   #   stop("Number of observations in con and cat vars don't match")
+   # }
     numCatVar <- ncol(catFactor)
     
     numLev <- sapply(catFactor,function(xx) length(levels(xx)))
